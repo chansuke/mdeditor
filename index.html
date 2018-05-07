@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>mdeditor</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyARujqUDknbeGw_Y6okOPKJn5PmNRNMMX0",
+      authDomain: "mdmarkdown.firebaseapp.com",
+      databaseURL: "https://mdmarkdown.firebaseio.com",
+      projectId: "mdmarkdown",
+      storageBucket: "mdmarkdown.appspot.com",
+      messagingSenderId: "756514572210"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="/dist/build.js"></script>
+</body>
+
+</html>
