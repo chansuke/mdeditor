@@ -1,7 +1,7 @@
 <template>
   <div id='login'>
     <h1>{{ msg }}</h1>
-    <button>ログイン</button>
+    <button @click="googleLogin">ログイン</button>
   </div>
 </template>
 
@@ -10,8 +10,15 @@ export default {
   name: 'login',
   data() {
     return {
-      msg: 'This is a markdown editor'
+      msg: 'Welcome to mdeditor'
     };
+  },
+  methods: {
+    googleLogin: function() {
+      firebase
+        .auth()
+        .signInWithRedirect(new firebase.auth.GoogleAuthProvider());
+    }
   }
 };
 </script>
