@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "firebase-tools": "^3.18.4",
+    "marked": "^0.3.19",
     "vue": "^2.5.11",
     "yarn": "^1.6.0"
   },
